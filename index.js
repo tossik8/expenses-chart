@@ -9,12 +9,12 @@ $(document).ready(() => {
             mostExpensiveDay = record;
         }
         const el = document.getElementById(record.day);
-        initializeLabel(el, record);
+        initializeBarComponent(el, record);
         addEventListeners(el, record);
 
     });
     document.getElementById(mostExpensiveDay.day).classList.add("most-expensive");
-    $(".bar").animate({opacity: "1"}, 1200);
+    $(".bar").animate({opacity: "1"}, 1300);
 })
 
 function addEventListeners(el, record){
@@ -27,7 +27,7 @@ function addEventListeners(el, record){
         document.getElementById("bar-details-label-" + record.day).classList.add("invisible");
     })
 }
-function initializeLabel(el, record){
+function initializeBarComponent(el, record){
     el.style.height = record.amount * 2.5 + "px";
     document.getElementById("bar-details-label-" + record.day).textContent = "$" + record.amount;
 }
