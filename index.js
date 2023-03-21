@@ -14,7 +14,8 @@ $(document).ready(() => {
 
     });
     document.getElementById(mostExpensiveDay.day).classList.add("most-expensive");
-    $(".bar").animate({opacity: "1"}, 1300);
+    $(".bar").animate({height: "hide"}, 1);
+    $(".bar").animate({opacity: 1, height: "show"}, 1300);
 })
 
 function addEventListeners(el, record){
