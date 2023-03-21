@@ -13,7 +13,7 @@ body{
 main{
     width: 95%;
     max-width: 30rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .balance-section{
@@ -134,6 +134,7 @@ main{
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
