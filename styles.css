@@ -139,6 +139,9 @@ main{
 }
 
 @media screen and (max-width: 450px) {
+    .spending-label{
+        font-size: 1.5rem;
+    }
     .bar-details-label{
         font-size: 0.8rem;
     }
