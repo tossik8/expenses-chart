@@ -57,6 +57,7 @@ main{
     padding: 0.4rem;
     border-radius: 0.4rem;
     margin-bottom: -0.1rem;
+    transition: opacity 0.3s ease-in-out;
 }
 .invisible{
     opacity: 0;
