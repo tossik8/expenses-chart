@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="module" src="./index.js"></script>
+</head>
+<body>
+  <main>
+    <div class="panel">
+      <section class="balance-section">
+        <div class="balance-div">
+          <h2 class="balance-label">My balance</h2>
+          <p class="money-label"> $921.48</p>
+        </div>
+        <img src="./images/logo.svg" alt="Two overlapping circles">
+      </section>
+      <section class="history-section">
+        <h2 class="spending-label">Spending - Last 7 days</h2>
+        <div class="bar-chart">
+
+
+          <div class="bar-group">
+            <p id="bar-details-label-mon" class="bar-details-label invisible"></p>
+            <div id="mon" class="bar"></div>
+            <p class="day">mon</p>
+          </div>
+
+          <div class="bar-group">
+            <p id="bar-details-label-tue" class="bar-details-label invisible"></p>
+            <div id="tue" class="bar"></div>
+            <p class="day">tue</p>
+         </div>
+
+
+          <div class="bar-group">
+            <p id="bar-details-label-wed" class="bar-details-label invisible"></p>
+            <div id="wed" class="bar"></div>
+            <p class="day">wed</p>
+          </div>
+
+          <div class="bar-group">
+            <p id="bar-details-label-thu" class="bar-details-label invisible"></p>
+            <div id="thu" class="bar"></div>
+            <p class="day">thu</p>
+          </div>
+
+          <div class="bar-group">
+            <p id="bar-details-label-fri" class="bar-details-label invisible"></p>
+            <div id="fri" class="bar"></div>
+            <p class="day">fri</p>
+          </div>
+
+
+          <div class="bar-group">
+            <p id="bar-details-label-sat" class="bar-details-label invisible"></p>
+            <div id="sat" class="bar"></div>
+            <p class="day">sat</p>
+          </div>
+
+          <div class="bar-group">
+            <p id="bar-details-label-sun" class="bar-details-label invisible"></p>
+            <div id="sun" class="bar"></div>
+            <p class="day">sun</p>
+          </div>
+
+        </div>
+        <div class="separator"></div>
+        <div class="monthly-expenses">
+          <h2 class="total-label">Total this month</h2>
+          <div class="month-info">
+            <p class="sum">$478.33</p>
+            <div class="percent-div">
+              <p class="percent">+2.4%</p>
+              <p class="last-month">from last month</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/tossik8">Nikita Toropov</a>.
+  </footer>
+</body>
+</html>
